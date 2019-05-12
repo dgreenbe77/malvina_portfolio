@@ -2376,7 +2376,7 @@ function DayItem(b) {
   }
 
   function N(a) {
-    f(Model.colors[T]);
+    // f(Model.colors[T]);
     Model.dayListMask.style.height = "100%";
     document.documentElement.style.backgroundColor = "";
     window.removeEventListener("scroll", n);
@@ -2540,6 +2540,7 @@ function TileNumbers(b) {
     })
   };
   n.classList.add("day-numbers");
+  // TODO: number underline colors: k = "blue teal pink blue teal pink blue teal pink blue teal pink" is where number colors are defined
   (function () {
     for (var b = document.body.querySelectorAll(".day-list .day-list__item"), k = "blue teal pink blue teal pink blue teal pink blue teal pink".split(" "), p = 0, q = 0; q < b.length; q++) {
       var e = b[q].querySelector(".day-list__artists") ? !1 : !0,
@@ -2713,7 +2714,8 @@ function ArtistPanel(b, f, n) {
   f.dayListMask;
   f.viewport = {width: 0, height: 0};
   f.tileDimensions = {multiplier: 1, width: 0, height: 0};
-  f.colors = {navy: "#003264", blue: "#00AFFA", teal: "#32E1E1", pink: "#FAC8FA", red: "#FA4B4B", grey: "#F0F0F0"};
+  // TODO Update these background colors supported
+  f.colors = {navy: "#003264", blue: "#00AFFA", teal: "#32E1E1", pink: "#FAC8FA", red: "#FA4B4B", grey: "#F0F0F0", white: '#fff'};
   f.colorOrder = {
     blue: "blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink".split(" "),
     teal: "teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue".split(" "),
