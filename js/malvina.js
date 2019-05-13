@@ -2225,7 +2225,7 @@ function DayItem(b) {
       }
       b = S[ha];
       c = a - Model.viewport.height / 2 - 300;
-      !1 === C && b.offsetTop < c ? (ha++, ha >= S.length ? (C = !0, f("#ffffff")) : f(Model.colors[Model.colorOrder[T][ha]])) : (b = S[ha - 1]) && b.offsetTop > a - Model.viewport.height / 2 - 300 && (ha--, C = !1, f(Model.colors[Model.colorOrder[T][ha]]))
+      !1 === C && b && b.offsetTop < c ? (ha++, ha >= S.length ? (C = !0, f("#ffffff")) : f(Model.colors[Model.colorOrder[T][ha]])) : (b = S[ha - 1]) && b.offsetTop > a - Model.viewport.height / 2 - 300 && (ha--, C = !1, f(Model.colors[Model.colorOrder[T][ha]]))
     }
   }
 
@@ -2252,7 +2252,7 @@ function DayItem(b) {
   }
 
   function c(a) {
-    if (!z.isOpen && ba) for (y(), TweenLite.to(z, .3, {
+    if (!z.isOpen && ba) for (y(z.isOpen), TweenLite.to(z, .3, {
       _y: 0, _x: 0, width: Model.tileDimensions.width, height: Model.tileDimensions.height, ease: Quart.easeInOut,
       onUpdate: function () {
         z._update()
@@ -2270,8 +2270,10 @@ function DayItem(b) {
   }
 
   function k() {
+    var bgEl = $('.day-list__bg')[parseInt(J.dataset.titleIndex)];
+    $(bgEl).children().fadeOut();
     TweenLite.to(J, .3, {
-      _y: -25, ease: Quad.easeInOut, onUpdate: function () {
+      opacity: 1, _y: -25, ease: Quad.easeInOut, onUpdate: function () {
         J._update()
       }
     });
@@ -2282,9 +2284,13 @@ function DayItem(b) {
     })
   }
 
-  function y() {
+  function y(keepImgHidden) {
+    if (!Boolean(keepImgHidden)) {
+      var bgEl = $('.day-list__bg')[parseInt(J.dataset.titleIndex)];
+      $(bgEl).children().fadeIn();
+    }
     TweenLite.to(J, .3, {
-      _y: 0,
+      opacity: 0, _y: 0,
       ease: Quad.easeInOut, onUpdate: function () {
         J._update()
       }
@@ -2392,7 +2398,8 @@ function DayItem(b) {
         z._update()
       }, onComplete: function () {
         z.style.zIndex = "";
-        a()
+        a();
+        y();
       }
     })
   }
@@ -2434,7 +2441,7 @@ function DayItem(b) {
         this.target._update()
       }
     });
-    y();
+    y(true);
     z.style.cursor = "";
     z.isOpen = !0;
     z.style.zIndex = 1;
@@ -2507,6 +2514,8 @@ function DayItem(b) {
   R = b.querySelector(".day-list__artists");
   aa = b.querySelector(".day-list__bg");
   J = new Rum(b.querySelector(".day-list__title"));
+  J._y = 35;
+  J._update();
   X = new Rum(b.querySelector(".day-list__cta"));
   X._y = 35;
   X._update();

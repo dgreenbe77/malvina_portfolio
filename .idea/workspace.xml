@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f29b6248-d735-48ef-bd3c-145b4ece64c1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/css/malvina.css" afterPath="$PROJECT_DIR$/css/malvina.css" />
       <change beforePath="$PROJECT_DIR$/js/malvina.js" afterPath="$PROJECT_DIR$/js/malvina.js" />
       <change beforePath="$PROJECT_DIR$/work.html" afterPath="$PROJECT_DIR$/work.html" />
     </list>
@@ -15,21 +16,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="work.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="work.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="44" />
+            <state relative-caret-position="155">
+              <caret line="88" column="38" lean-forward="false" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="malvina.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="malvina.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/malvina.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="652" column="18" lean-forward="true" selection-start-line="652" selection-start-column="18" selection-end-line="652" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="malvina.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/malvina.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="2720" column="47" lean-forward="true" selection-start-line="2720" selection-start-column="47" selection-end-line="2720" selection-end-column="47" />
+            <state relative-caret-position="262">
+              <caret line="2400" column="12" lean-forward="false" selection-start-line="2400" selection-start-column="12" selection-end-line="2400" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -39,36 +50,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nav_lo</find>
-      <find>Controller.init</find>
-      <find>font</find>
-      <find>Intro</find>
-      <find>nav</find>
-      <find>hideXa</find>
-      <find>Model.nav.animateIn()</find>
-      <find>hideX</find>
-      <find>Model.nav</find>
-      <find>showX</find>
-      <find>Ten</find>
-      <find>n.addEventListener(&quot;click&quot;, functio</find>
-      <find>init</find>
-      <find>aa</find>
-      <find>backgroundColor</find>
-      <find>__number</find>
       <find>10</find>
       <find>day</find>
       <find>day-numbers</find>
       <find>day-numbers__number</find>
-      <find>k</find>
       <find>T</find>
       <find>T =</find>
       <find>TweenLite.to([document.documentElement</find>
       <find>f(</find>
       <find>N</find>
       <find>deb</find>
-      <find>debugger</find>
-      <find>data-color</find>
       <find>TODO</find>
+      <find>day-list__cta</find>
+      <find>X</find>
+      <find>data-color</find>
+      <find>opaci</find>
+      <find>nimateIn</find>
+      <find>function k</find>
+      <find>debugger;</find>
+      <find>opacity: 0</find>
+      <find>font</find>
+      <find>k</find>
+      <find>jquer</find>
+      <find>debugger</find>
+      <find>day-list__bg</find>
+      <find>C =</find>
+      <find>y</find>
+      <find>y(</find>
+      <find>debugg</find>
+      <find>//</find>
+      <find>day-list__title</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -96,8 +107,8 @@
         <option value="$PROJECT_DIR$/js/malvina_home.js" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/css/malvina.css" />
-        <option value="$PROJECT_DIR$/work.html" />
         <option value="$PROJECT_DIR$/js/malvina.js" />
+        <option value="$PROJECT_DIR$/work.html" />
       </list>
     </option>
   </component>
@@ -158,6 +169,12 @@
               <item name="malvina_portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="malvina_portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="project_covers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="malvina_portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="malvina_portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -175,6 +192,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -209,12 +227,12 @@
       <option name="presentableId" value="Default" />
       <updated>1552070917877</updated>
       <workItem from="1552070933640" duration="11758000" />
-      <workItem from="1557696654400" duration="2200000" />
+      <workItem from="1557696654400" duration="6930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13958000" />
+    <option name="totallyTimeSpent" value="18688000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -229,16 +247,16 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -370,14 +388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/malvina.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="422" column="60" lean-forward="true" selection-start-line="422" selection-start-column="60" selection-end-line="422" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/malvina_home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -386,18 +396,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work.html">
+    <entry file="file://$PROJECT_DIR$/images/project_covers/how_to_cook.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/malvina.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="44" />
+        <state relative-caret-position="320">
+          <caret line="652" column="18" lean-forward="true" selection-start-line="652" selection-start-column="18" selection-end-line="652" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/malvina.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="2720" column="47" lean-forward="true" selection-start-line="2720" selection-start-column="47" selection-end-line="2720" selection-end-column="47" />
+        <state relative-caret-position="262">
+          <caret line="2400" column="12" lean-forward="false" selection-start-line="2400" selection-start-column="12" selection-end-line="2400" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="88" column="38" lean-forward="false" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="38" />
           <folding />
         </state>
       </provider>

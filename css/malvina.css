@@ -629,6 +629,7 @@ main {
     position: absolute;
     background-color: #00affa; }
   .day-list__title {
+    opacity: 0;
     font-family: "ITC Clearface W01";/*"Clearface ITC W01 Bold";*/
 	font-weight: 600;
     font-size: 30px;
@@ -648,6 +649,7 @@ main {
       .day-list__title {
         font-size: 80px;
         margin-top: -65px; } }
+  .day-list__bg-img { width: 100%; }
   .day-list__cta {
     font-family: "adelle-sans";
     font-size: 16px;
