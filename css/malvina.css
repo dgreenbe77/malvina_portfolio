@@ -1,11 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Stylish&display=swap');
 
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
+
 html {
   font-family: sans-serif;
   /* 1 */
@@ -108,10 +103,6 @@ strong {
 dfn {
   font-style: italic; }
 
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
- */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -368,6 +359,53 @@ li {
   margin: 0;
   padding: 0; }
 
+#home_background {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#home_planet {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background-image: url(/images/Asset%203.svg);
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#home_astronaut {
+    position: absolute;
+    bottom: 0;
+    left: 25vw;
+    height: 100vh;
+    width: 15vw;
+    background-image: url(/images/Asset%202.svg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #003247;
+  background: linear-gradient(-160deg, #003247 0%, #005a95 70%, #5c95bb 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0;
+}
+
 a {
   text-decoration: none; }
 
@@ -392,7 +430,7 @@ html {
   overflow-y: scroll; }
 
 main {
-  font-family: "adelle-sans", HelveticaNeue, "Helvetica Neue", HelveticaNeueRoman, HelveticaNeue-Roman, "Helvetica Neue Roman", Helvetica, Arial, sans-serif;
+  font-family: "Stylish", HelveticaNeue, "Helvetica Neue", HelveticaNeueRoman, HelveticaNeue-Roman, "Helvetica Neue Roman", Helvetica, Arial, sans-serif;
   overflow-y: scroll; }
 
 .container {
@@ -411,23 +449,8 @@ main {
     .container {
       width: 1420px; } }
 
-.desktop .nav__hamburger:hover .nav__hamburger-svg-1 {
-  transform: translate(0px, 2px); }
-.desktop .nav__hamburger:hover .nav__hamburger-svg-3 {
-  transform: translate(0px, -2px); }
-.desktop .nav__hamburger--open:hover .nav__hamburger-svg-1 {
-  transform: translate(1px, 8px) rotate(-45deg) !important;
-  -moz-transform: translate(6px, 6px) rotate(-45deg) !important; }
-.desktop .nav__hamburger--open:hover .nav__hamburger-svg-2 {
-  opacity: 0; }
-.desktop .nav__hamburger--open:hover .nav__hamburger-svg-3 {
-  transform: translate(1px, -8px) rotate(45deg) !important;
-  -moz-transform: translate(6px, -5px) rotate(45deg) !important; }
 .desktop .nav__x:hover {
   transform: rotate(90deg); }
-
-.home .nav__logo .nav__logo-svg {
-  fill: #003264 !important; }
 
 #logo {
     height: 70px;
@@ -441,75 +464,24 @@ main {
   position: fixed;
   width: 100%;
   height: 80px;
-  padding-top: 10px;
+  padding-top: 15px;
   z-index: 5;
   top: -100px; }
   .nav--show {
     top: 0;
   }
+
+.nav .pages a {
+    color: white;
+}
+
   .nav__logo {
     position: absolute;
-    left: 10px;
+    left: 15px;
     display: block;
     margin: 5px 0 0 0;
     overflow: hidden;
     cursor: pointer; }
-  .nav__logo-svg {
-    fill: #003264;
-    margin-top: -11px;
-    transition: fill .15s linear; }
-  .nav__hamburger {
-    padding: 5px;
-    width: 34px;
-    height: 35px;
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    top: 20px;
-    right: 20px; }
-    .nav__hamburger:focus {
-      outline: none; }
-    .nav__hamburger--open .nav__hamburger-svg-1 {
-      transform: translate(1px, 8px) rotate(-45deg);
-      -moz-transform: translate(6px, 6px) rotate(-45deg); }
-    .nav__hamburger--open .nav__hamburger-svg-2 {
-      opacity: 0; }
-    .nav__hamburger--open .nav__hamburger-svg-3 {
-      transform: translate(1px, -8px) rotate(45deg);
-      -moz-transform: translate(6px, -5px) rotate(45deg); }
-    @media all and (min-width: 1020px) {
-      .nav__hamburger {
-        right: auto;
-        left: 50%;
-        margin-left: 450px; } }
-    @media all and (min-width: 1300px) {
-      .nav__hamburger {
-        margin-left: 600px; } }
-  .nav__hamburger-svg {
-    fill: #003264; }
-    .nav__hamburger-svg-2 {
-      transition: opacity .2s ease-in-out; }
-    .nav__hamburger-svg-1, .nav__hamburger-svg-3 {
-      transition: transform .2s ease-in-out;
-      transform-origin: 50% 50%; }
-  .nav__x {
-    position: absolute;
-    top: -30px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    padding: 7px;
-    transition: transform .2s ease-in-out; }
-    @media all and (min-width: 1020px) {
-      .nav__x {
-        left: 50%;
-        margin-left: -483px; } }
-    @media all and (min-width: 1300px) {
-      .nav__x {
-        margin-left: -600px; } }
-  .nav__x-svg {
-    fill: #003264; }
 
 .intro {
   position: absolute;
@@ -518,7 +490,7 @@ main {
     position: absolute;
     width: 100%; }
   .intro span {
-    font-family: "adelle-sans";
+    font-family: "Stylish";
     font-size: 18px;
     text-align: center;
     display: block;
@@ -630,7 +602,7 @@ main {
     background-color: #00affa; }
   .day-list__title {
     opacity: 0;
-    font-family: "ITC Clearface W01";/*"Clearface ITC W01 Bold";*/
+    font-family: "Roboto Slab";
 	font-weight: 600;
     font-size: 30px;
     line-height: 1em;
@@ -651,7 +623,6 @@ main {
         margin-top: -65px; } }
   .day-list__bg-img { width: 100%; }
   .day-list__cta {
-    font-family: "adelle-sans";
     font-size: 16px;
     line-height: 1em;
     color: #fff;
@@ -724,7 +695,6 @@ main {
     font-weight: 400;
     margin-right: 8px;
     letter-spacing: .1em;
-    font-family: "adelle-sans";
     transition: color .3s linear; }
     @media all and (min-width: 780px) {
       .day-numbers__number {
@@ -768,7 +738,6 @@ main {
   .menu__button-list {
     font-size: 21px;
     color: #003264;
-    font-family: "adelle-sans";
     text-align: center; }
     @media all and (min-width: 760px) {
       .menu__button-list {
@@ -786,7 +755,6 @@ main {
       display: block; }
     .menu__content p {
       color: #003264;
-      font-family: "adelle-sans";
       margin: 10px 0 0;
       font-size: 14px; }
       @media all and (min-width: 760px) {
@@ -878,8 +846,7 @@ main {
         border-bottom-color: transparent; }
   .menu__subtitle {
     font-size: 18px;
-    display: block;
-    font-family: "ITC Clearface W01"; }
+    display: block; }
     @media all and (min-width: 760px) {
       .menu__subtitle {
         font-size: 24px; } }
@@ -904,13 +871,11 @@ main {
       width: 100%;
       text-align: center;
       color: #d0d0d0;
-      font-size: 12px;
-      font-family: "adelle-sans"; }
+      font-size: 12px; }
     .album--footer .album__label {
       color: #003264;
       display: block;
       text-align: center;
-      font-family: "ITC Clearface W01";/* "Clearface ITC W01 Bold"; */
 	  font-weight: 600;
       font-size: 24px;
       margin-bottom: 20px; }
@@ -924,7 +889,6 @@ main {
       color: #fff;
       padding: 14px 20px 15px;
       border-radius: 30px;
-      font-family: "adelle-sans";
       margin-left: 6px;
       font-size: 12px;
       line-height: 1em;
@@ -1019,8 +983,7 @@ main {
     font-size: 24px;
     display: inline-block;
     border-bottom: 2px solid #003264;
-    margin-bottom: 30px;
-    font-family: "adelle-sans"; }
+    margin-bottom: 30px; }
     @media all and (min-width: 1100px) {
       .album__number {
         font-size: 28px; } }
@@ -1030,7 +993,6 @@ main {
   .album__name {
     font-size: 24px;
     display: block;
-    font-family: "ITC Clearface W01";/*"Clearface ITC W01 Bold";*/
 	font-weight: 600;
     line-height: 1em;
     margin-bottom: 5px; }
@@ -1043,8 +1005,7 @@ main {
   .album__band {
     font-size: 18px;
     display: block;
-    margin-bottom: 25px;
-    font-family: "ITC Clearface W01"; }
+    margin-bottom: 25px;}
     @media all and (min-width: 1100px) {
       .album__band {
         font-size: 18px; } }
@@ -1053,12 +1014,10 @@ main {
         font-size: 30px; } }
   .album__designer {
     display: block;
-    margin-bottom: 25px;
-    font-family: "ITC Clearface W01"; }
+    margin-bottom: 25px;}
     .album__designer a,
     .album__designer span {
       color: #003264;
-      font-family: "adelle-sans";
       cursor: pointer;
       border-bottom: 1px solid #003264;
       line-height: 1em;
@@ -1069,7 +1028,6 @@ main {
         border-color: transparent; }
   .album__description {
     margin: 0;
-    font-family: "ITC Clearface W01";
     line-height: 1.4em; }
   .album__play-container {
     height: 38px;
@@ -1168,7 +1126,6 @@ main {
       .artist-panel__sidebar .album__artwork:last-child {
         margin-bottom: 0; }
   .artist-panel__name {
-    font-family: "ITC Clearface W01";/*"Clearface ITC W01 Bold";*/
 	font-weight: 600;
     display: block;
     text-align: center;
@@ -1196,7 +1153,6 @@ main {
     .artist-panel__box:last-child {
       margin-bottom: 0; }
   .artist-panel__box-num {
-    font-family: "ITC Clearface W01";/*"Clearface ITC W01 Bold";*/
 	font-weight: 600;
     color: #fff;
     font-size: 60px;
@@ -1227,7 +1183,7 @@ main {
 
 div.container
 {
-  font-family: Raleway;
+  font-family: "Stylish", sans-serif;
   margin: 0 auto;
   text-align: center;
 }
@@ -1236,7 +1192,7 @@ div.container a
 {
   color: black;
   text-decoration: none;
-  font: 20px Raleway;
+  font: 20px;
   margin: 0px 10px;
   position: relative;
   z-index: 0;
@@ -1249,24 +1205,24 @@ div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
   position: absolute;
   left: 0px;
   width: 100%;
-  height: 2px;
-  background: black;
-  color: black;
+  height: 1px;
+  background: white;
+  color: white;
   content: "";
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 div.topBotomBordersIn a:before
 {
-  top: 0px;
-  transform: translateY(-10px);
+  top: -3px;
+  transform: translateY(-8px);
 }
 
 div.topBotomBordersIn a:after
 {
-  bottom: 0px;
-  transform: translateY(10px);
+  bottom: -3px;
+  transform: translateY(8px);
 }
 
 div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after

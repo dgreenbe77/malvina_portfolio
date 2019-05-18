@@ -2012,15 +2012,15 @@ function Menu(b) {
     })
   };
   new Rum(b);
-  b.style.width = Model.viewport.width + "px";
-  k = new Rum(b.querySelector(".menu__bg"));
-  y = b.querySelector(".menu__text-container");
-  _menuButtonList = b.querySelector(".menu__button-list");
-  w = _menuButtonList.querySelectorAll(".menu__button");
-  (function () {
-    window.addEventListener("resize", p);
-    for (var b = 0; b < w.length; b++) w[b].addEventListener("click", f)
-  })();
+//  b.style.width = Model.viewport.width + "px";
+//  k = new Rum(b.querySelector(".menu__bg"));
+//  y = b.querySelector(".menu__text-container");
+//  _menuButtonList = b.querySelector(".menu__button-list");
+//  w = _menuButtonList.querySelectorAll(".menu__button");
+//  (function () {
+//    window.addEventListener("resize", p);
+//    for (var b = 0; b < w.length; b++) w[b].addEventListener("click", f)
+//  })();
   return c
 };
 
