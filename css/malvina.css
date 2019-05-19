@@ -449,6 +449,25 @@ main {
     .container {
       width: 1420px; } }
 
+
+.nav__x {
+position: absolute;
+top: -30px;
+right: 20px;
+width: 30px;
+height: 30px;
+cursor: pointer;
+padding: 7px;
+transition: transform .2s ease-in-out; }
+@media all and (min-width: 1020px) {
+  .nav__x {
+    left: 50%;
+    margin-left: -483px; } }
+@media all and (min-width: 1300px) {
+  .nav__x {
+    margin-left: -600px; } }
+.nav__x-svg {
+fill: #003264; }
 .desktop .nav__x:hover {
   transform: rotate(90deg); }
 
