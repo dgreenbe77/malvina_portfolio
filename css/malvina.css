@@ -409,11 +409,6 @@ canvas {
 a {
   text-decoration: none; }
 
-.group:after, .menu__artist-grid:after, .menu__col-container:after, .album .container:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 html,
 body {
   margin: 0;
@@ -427,10 +422,6 @@ body {
   background-color: #fff; }
 
 html {
-  overflow-y: scroll; }
-
-main {
-  font-family: "Stylish", HelveticaNeue, "Helvetica Neue", HelveticaNeueRoman, HelveticaNeue-Roman, "Helvetica Neue Roman", Helvetica, Arial, sans-serif;
   overflow-y: scroll; }
 
 .container {
