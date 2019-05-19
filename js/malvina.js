@@ -2012,15 +2012,6 @@ function Menu(b) {
     })
   };
   new Rum(b);
-//  b.style.width = Model.viewport.width + "px";
-//  k = new Rum(b.querySelector(".menu__bg"));
-//  y = b.querySelector(".menu__text-container");
-//  _menuButtonList = b.querySelector(".menu__button-list");
-//  w = _menuButtonList.querySelectorAll(".menu__button");
-//  (function () {
-//    window.addEventListener("resize", p);
-//    for (var b = 0; b < w.length; b++) w[b].addEventListener("click", f)
-//  })();
   return c
 };
 
@@ -2123,7 +2114,6 @@ function DayList() {
   P.animateIn = function (b) {
     TweenLite.to(la, .7, {delay: .7, opacity: 1, ease: Quad.easeOut});
     F = 0
-    // "" === Controller.url ? 0 : 10 - Number(Controller.url);
     w();
     var c = 1.2 + .3 * F;
     setTimeout(a[F].select, 1E3 * (c + 1 - .5));
@@ -2317,14 +2307,6 @@ function DayItem(b) {
 
   function I() {
     K = [];
-//    for (var a = b.querySelectorAll(".day-list__album"), c = 0; c < a.length; c++) {
-//      var e = new Rum(a[c]);
-//      e._x = Model.albumPositions[L][c].x * Model.tileDimensions.multiplier;
-//      e._y = Model.albumPositions[L][c].y * Model.tileDimensions.multiplier;
-//      e._rotation = Model.albumPositions[L][c].rotation;
-//      e._update();
-//      K.push(e)
-//    }
   }
 
   function H(b) {
@@ -2382,7 +2364,6 @@ function DayItem(b) {
   }
 
   function N(a) {
-    // f(Model.colors[T]);
     Model.dayListMask.style.height = "100%";
     document.documentElement.style.backgroundColor = "";
     window.removeEventListener("scroll", n);
@@ -2702,9 +2683,7 @@ function ArtistPanel(b, f, n) {
       p.url = n();
       b()
     }, updateURL: function (b) {
-      // history.pushState("data", b, b);
       p.url = n();
-      // q(p.url);
       Model.view.update(b)
     }
   };
