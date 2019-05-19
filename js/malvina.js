@@ -2317,14 +2317,14 @@ function DayItem(b) {
 
   function I() {
     K = [];
-    for (var a = b.querySelectorAll(".day-list__album"), c = 0; c < a.length; c++) {
-      var e = new Rum(a[c]);
-      e._x = Model.albumPositions[L][c].x * Model.tileDimensions.multiplier;
-      e._y = Model.albumPositions[L][c].y * Model.tileDimensions.multiplier;
-      e._rotation = Model.albumPositions[L][c].rotation;
-      e._update();
-      K.push(e)
-    }
+//    for (var a = b.querySelectorAll(".day-list__album"), c = 0; c < a.length; c++) {
+//      var e = new Rum(a[c]);
+//      e._x = Model.albumPositions[L][c].x * Model.tileDimensions.multiplier;
+//      e._y = Model.albumPositions[L][c].y * Model.tileDimensions.multiplier;
+//      e._rotation = Model.albumPositions[L][c].rotation;
+//      e._update();
+//      K.push(e)
+//    }
   }
 
   function H(b) {
