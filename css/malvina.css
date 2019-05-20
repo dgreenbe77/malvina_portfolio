@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre:300,400|Averia+Serif+Libre:300,400|Roboto+Slab:100,300,400,700|Open+Sans:300,300i,400,400i,700,700i&display=swap');
 
 
 html {
@@ -389,6 +389,25 @@ li {
     z-index: 2;
 }
 
+@media only screen and (max-width: 768px) {
+    #home_astronaut {
+        width: 22vw;
+        left: 30vw;
+    }
+    #home_planet {
+        width: 70vw;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .nav .pages {
+        margin: none;
+        padding-right: 20px;
+        text-align: right;
+    }
+}
+
 canvas {
   display: block;
   vertical-align: bottom;
@@ -489,6 +508,18 @@ fill: #003264; }
     overflow: hidden;
     cursor: pointer; }
 
+.nav .pages {
+    padding-top: 15px;
+}
+
+.nav .pages a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.85em;
+}
+
 .desktop .arrow-left:hover .arrow-left__svg {
   transform: translateX(-8px); }
 .desktop .arrow-right:hover .arrow-right__svg {
@@ -578,7 +609,6 @@ fill: #003264; }
     background-color: #00affa; }
   .day-list__title {
     opacity: 0;
-    font-family: "Roboto Slab";
 	font-weight: 600;
     font-size: 30px;
     line-height: 1em;
@@ -640,7 +670,7 @@ fill: #003264; }
   .day-numbers__line {
     width: 10px;
     height: 2px;
-    background-color: #00affa;
+    background-color: black;
     position: absolute;
     left: 0;
     bottom: 0; }
@@ -661,17 +691,15 @@ fill: #003264; }
     .day-numbers__number--disabled {
       color: #ccc !important; }
     .day-numbers__number--selected, .day-numbers__number:hover {
-      color: #00affa; }
+      color: black }
     .day-numbers__number--selected.teal, .day-numbers__number:hover.teal {
-      color: #32e1e1; }
+      color: black; }
     .day-numbers__number--selected.pink, .day-numbers__number:hover.pink {
-      color: #fac8fa; }
+      color: black; }
   .day-numbers .day-numbers__number--disabled.day-numbers__number--selected {
     border-color: #ccc !important; }
 
-div.container
-{
-  font-family: "Stylish", sans-serif;
+div.container {
   margin: 0 auto;
   text-align: center;
 }
@@ -718,47 +746,55 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
   transform: translateY(0px);
 }
 
-.hello {
-    z-index: 999;
-    color: red;
-    width: 500px;
-    height: 500px;
-}
-
-
 /* GENERAL STYLE -------------------- */
 .cd-intro {
-  color: black;
-  position: relative;
-  height: 100vh;
-  width: 100%;
+  position: absolute;
+  top: 30%;
+  right: 5vw;
+  width: 45%;
   /* vertically align its content */
   display: table;
-  background: #2e416a;
   overflow: hidden;
-  z-index: 10;
+  z-index: 4;
 }
 
 .cd-intro-content {
   /* vertically align inside its parent */
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   padding: 0 5%;
-  background: #2e416a;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+
+@media only screen and (max-width: 768px) {
+    .cd-intro-content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+        .cd-intro {
+            top: 20%;
+            width: 90%;
+            right: 0;
+            left: 0;
+            margin: auto;
+    }
+}
+
 .cd-intro-content h1 {
-  font-size: 2.4rem;
-  color: #ffffff;
+  font-family: 'Averia Serif Libre', serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-left: -2px;
 }
 .cd-intro-content p {
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1.4;
-  margin: 1em 0;
-  color: #6d7a97;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
 }
 .cd-intro-content .action-wrapper {
   display: inline-block;
@@ -771,45 +807,28 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 .cd-intro-content .action-wrapper > * {
   float: left;
 }
-@media only screen and (min-width: 768px) {
-  .cd-intro-content h1 {
-    font-size: 5.2rem;
-    font-weight: 300;
-  }
-  .cd-intro-content p {
-    font-size: 1.6rem;
-    margin: 1.5em 0 1.9em;
-  }
-}
 
 .cd-btn {
   display: inline-block;
-  padding: 1.2em 1.4em;
-  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 15px;
+  padding: 15px 0px;
+  width: 230px;
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 1rem;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
   background-color: #202e4a;
-  border-radius: .25em;
-  margin-right: 1.5em;
+  border-radius: 100px;
+  transition: all .5s ease-out;
 }
-.cd-btn:nth-of-type(2) {
-  margin-right: 0;
+
+.cd-btn:hover {
+    background-color: #F15F4E;
+    letter-spacing: 1px;
 }
-.cd-btn.main-action {
-  background-color: #fb5e58;
-}
-@media only screen and (min-width: 480px) {
-  .cd-btn {
-    padding: 1.2em 1.6em;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .cd-btn {
-    padding: 1.4em 1.8em;
-  }
-}
+
+
 
 .cd-intro-content h1,
 .cd-intro-content h1 span,
@@ -843,7 +862,6 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
   width: 100%;
   max-width: 650px;
   margin: 0 auto;
-  padding: 2em 0;
   overflow: hidden;
 }
 .mask-2.cd-intro-content .content-wrapper::before {
@@ -854,11 +872,12 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
   top: 0;
   left: 0;
   height: 100%;
-  width: 2px;
-  background-color: #ffffff;
+  width: 1px;
+  background-color: #fff;
   -webkit-animation: cd-pulse 1.3s 0.3s both;
   -moz-animation: cd-pulse 1.3s 0.3s both;
   animation: cd-pulse 1.3s 0.3s both;
+  animation-delay: 1s;
 }
 .no-cssanimations .mask-2.cd-intro-content .content-wrapper::before {
   opacity: 0;
@@ -874,9 +893,9 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  -webkit-animation-delay: 1.1s;
-  -moz-animation-delay: 1.1s;
-  animation-delay: 1.1s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
