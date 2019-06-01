@@ -450,7 +450,7 @@ body {
   color: #000;
   height: 100%;
   width: 100%;
-  overflow: hidden; }
+}
 
 body {
   background-color: #fff; }
@@ -546,7 +546,7 @@ fill: #003264; }
   height: 100%;
   top: 0;
   left: 0;
-  overflow: hidden; }
+}
 
 .arrow-left {
   width: 40px;
@@ -671,7 +671,7 @@ fill: #003264; }
     width: 100%;
     position: relative;
     top: 100%;
-    margin-top: 300px; }
+    margin-top: 100px; }
 
 .day-numbers {
   position: absolute;
@@ -1044,20 +1044,19 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 }
 
 .me {
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
     font-family: 'Averia Serif Libre', serif;
     font-size: 5vw;
     color: #B4C7D8;
     background: linear-gradient(-90deg, #5c95bb 0%, #005a95 20%, #003247 40%, #005a95 70%, #5c95bb 100%);
-  background-size: 200% auto;
-  
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-      animation: shine 10s linear infinite;
+    background-size: 200% auto;  
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s linear infinite;
 }
 
   @keyframes shine {
@@ -1065,3 +1064,91 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
       background-position: 200% center;
     }
   }
+
+.path {
+    width: 52vw;
+    margin: 0 auto;
+    z-index: -1;
+    display: block;
+}
+
+.vertical_path_notes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vertical_path_note_one {
+    width: 40vw;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 100;
+    text-align: center;
+}
+
+.vertical_path_note_two {
+    width: 40vw;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 100;
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0 100px;
+    margin-top: -50px;
+}
+
+.planet {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+}
+
+.planet_text {
+    text-align: center;
+    height: 20%;
+    width: 65%;
+    margin: 40% auto;
+    top: 0;
+    left: 0;
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #005a95;
+}
+
+.mars {
+    position: relative;
+    background-image: url(/images/mars.svg);
+}
+
+.neptune {
+    position: relative;
+    background-image: url(/images/neptune.svg);
+}
+
+.planet_layer {
+    border: 2px solid #005a95;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.85);
+    transition: all 1s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.planet_layer:hover {
+    background-color: transparent;
+}
+
+.lighter_text {
+    color: #84b1d0;
+}
+
+.small_text {
+    font-size: 1.5rem;
+}
