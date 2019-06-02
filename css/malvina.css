@@ -382,7 +382,7 @@ li {
     left: 25vw;
     height: 100vh;
     width: 15vw;
-    background-image: url(/images/Asset2.svg);
+    background-image: url(/images/Asset_2.svg);
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -608,8 +608,10 @@ fill: #003264; }
     position: absolute;
     z-index: 0;
 }
-    .day-list__item:nth-child(1) .day-list__bg, .day-list__item:nth-child(6) .day-list__bg {
-      background-color: #00917e; }
+
+.day-list__item:nth-child(1) .day-list__bg, .day-list__item:nth-child(6) .day-list__bg {
+    background-color: #00917e;
+}
     .day-list__item:nth-child(2) .day-list__bg, .day-list__item:nth-child(7) .day-list__bg {
       background-color: #f15f4e; }
     .day-list__item:nth-child(3) .day-list__bg, .day-list__item:nth-child(8) .day-list__bg {
