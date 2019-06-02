@@ -1198,3 +1198,12 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 }
 
 .project_text__header {}
+
+.nav--black .pages a {
+    color: black;
+}
+
+.nav--black div.topBotomBordersIn a:before, .nav--black div.topBotomBordersIn a:after {
+    color: black;
+    background: black;
+}
