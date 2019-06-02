@@ -628,7 +628,7 @@ fill: #003264; }
     background-color: #005a95;
 }
 
-  .day-list__title {
+.day-list__title {
     opacity: 0;
 	font-weight: 600;
     font-size: 30px;
@@ -1188,3 +1188,13 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 .small_text {
     font-size: 2vw;
 }
+
+.project_text--hidden {
+    opacity: 0 !important;;
+}
+
+.project_text--show {
+    opacity: 1 !important;
+}
+
+.project_text__header {}
