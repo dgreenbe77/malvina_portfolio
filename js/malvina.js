@@ -140,6 +140,7 @@
     c = e.Ticker.prototype = new e.events.EventDispatcher;
     c.constructor = e.Ticker;
     var S = N("core.Animation", function (d, h) {
+      // TODO: This is where you set the speed and delay of all animations
       if (this.vars = h = h || {}, this._duration = this._totalDuration = d || 0, this._delay = Number(h.delay) || 0, this._timeScale = 1, this._active = !0 === h.immediateRender, this.data = h.data, this._reversed = !0 === h.reversed, ra) {
         y || k.wake();
         var a = this.vars.useFrames ? ia : ra;
@@ -2117,8 +2118,9 @@ function DayList() {
     w();
     var c = 1.2 + .3 * F;
     setTimeout(a[F].select, 1E3 * (c + 1 - .5));
-    TweenLite.to(E, c, {
-      delay: 1,
+    // TODO: This is where you set the speed and delay of the initial animation
+    TweenLite.to(E, 1.2, {
+      delay: .4,
       _x: Math.floor(-a[F].offsetLeft + (Model.viewport.width - Model.tileDimensions.width) / 2),
       ease: Quart.easeInOut,
       onUpdate: function () {
@@ -2166,7 +2168,7 @@ function DayList() {
       a.push(e)
     }
     la = new TileNumbers(p);
-    Model.mainContainer.appendChild(la)
+    Model.mainContainer.appendChild(la);
   })();
   K = Model.mainContainer.querySelector(".arrow-left");
   R = Model.mainContainer.querySelector(".arrow-right");
@@ -2525,7 +2527,9 @@ function TileNumbers(b) {
     setTimeout(function () {
       c.classList.add("day-numbers__number--selected")
     }, 150);
-    TweenLite.to(q, .5, {
+    // TODO: This is where you set the speed and delay of the initial animation
+    TweenLite.to(q, 1.2, {
+      delay: .4,
       backgroundColor: Model.colors[c.color],
       width: c.clientWidth,
       _x: c.offsetLeft,
@@ -2708,7 +2712,7 @@ function ArtistPanel(b, f, n) {
   f.dayListMask;
   f.viewport = {width: 0, height: 0};
   f.tileDimensions = {multiplier: 1, width: 0, height: 0};
-  // TODO Update these background colors supported
+  // TODO Update the background colors supported
   f.colors = {navy: "#003264", blue: "#00AFFA", teal: "#32E1E1", pink: "#FAC8FA", red: "#FA4B4B", grey: "#F0F0F0", white: '#fff'};
   f.colorOrder = {
     blue: "blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink blue teal pink".split(" "),
