@@ -369,7 +369,7 @@ li {
     position: absolute;
     width: 50vw;
     height: 100vh;
-    background-image: url(/images/Asset%203.svg);
+    background-image: url(/images/Asset_3.svg);
     background-position: left bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -382,7 +382,7 @@ li {
     left: 25vw;
     height: 100vh;
     width: 15vw;
-    background-image: url(/images/Asset%202.svg);
+    background-image: url(/images/Asset_2.svg);
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -624,13 +624,33 @@ fill: #003264; }
     height: 100%;
     position: absolute;
     background-color: #005a95;
-    background-image: url(/images/project_covers/rockeby.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.day-list__bg.project_one {
+    background-image: url(/images/project_covers/rockeby.png);
+}
+
+.day-list__bg::before {
+    content: "";
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00a0af;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.day-list__item:hover .day-list__bg:before,
+.day-list__item:focus .day-list__bg:before {
+    opacity: 1;
+}
+
 .day-list__bg:hover {
-    transform: scale(1.2);
+    
 }
 
   .day-list__title {
@@ -644,17 +664,28 @@ fill: #003264; }
     top: 50%;
     margin-top: -30px;
     width: 100%;
-    text-align: center; }
-    @media all and (min-width: 780px) {
-      .day-list__title {
+    text-align: center; 
+}
+
+@media all and (min-width: 780px) {
+    .day-list__title {
         font-size: 40px;
-        margin-top: -50px; } }
-    @media all and (min-width: 1650px) and (min-height: 1070px) {
-      .day-list__title {
+        margin-top: -50px; 
+    } 
+}
+
+@media all and (min-width: 1650px) and (min-height: 1070px) {
+    .day-list__title {
         font-size: 80px;
-        margin-top: -65px; } }
-  .day-list__bg-img { width: 100%; }
-  .day-list__cta {
+        margin-top: -65px; 
+    } 
+}
+  
+.day-list__bg-img { 
+    width: 100%; 
+}
+
+.day-list__cta {
     font-size: 16px;
     line-height: 1em;
     color: #fff;
@@ -664,35 +695,51 @@ fill: #003264; }
     margin-top: 20px;
     width: 100%;
     text-align: center;
-    opacity: 0; }
-    @media all and (min-width: 780px) {
-      .day-list__cta {
+    opacity: 0; 
+}
+
+@media all and (min-width: 780px) {
+    .day-list__cta {
         margin-top: 35px;
-        font-size: 20px; } }
-    @media all and (min-width: 1650px) and (min-height: 1070px) {
-      .day-list__cta {
-        margin-top: 50px; } }
-  .day-list__header {
+        font-size: 20px; 
+    } 
+}
+    
+@media all and (min-width: 1650px) and (min-height: 1070px) {
+    .day-list__cta {
+        margin-top: 50px; 
+    } 
+}
+
+.day-list__header {
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow: hidden; }
-  .day-list__artists {
+    overflow: hidden; 
+}
+
+.day-list__artists {
     display: none;
     width: 100%;
     position: relative;
     top: 100%;
-    margin-top: 100px; }
+    margin-top: 100px; 
+}
 
 .day-numbers {
   position: absolute;
   bottom: 15px;
   width: 100%;
   text-align: center;
-  opacity: 0; }
-  @media all and (min-width: 780px) {
+  opacity: 0; 
+}
+  
+@media all and (min-width: 780px) {
     .day-numbers {
-      bottom: 30px; } }
+      bottom: 30px; 
+    } 
+}
+
   .day-numbers__line {
     width: 10px;
     height: 2px;
@@ -1045,7 +1092,8 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     left: 0;
     right: 0;
     bottom: 15vh;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    line-height: 1.7em;
     font-weight: 100;
     width: 70vw;
 }
