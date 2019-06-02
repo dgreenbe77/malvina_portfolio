@@ -382,7 +382,7 @@ li {
     left: 25vw;
     height: 100vh;
     width: 15vw;
-    background-image: url(/images/Asset_2.svg);
+    background-image: url(/images/Asset2.svg);
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -624,33 +624,6 @@ fill: #003264; }
     height: 100%;
     position: absolute;
     background-color: #005a95;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.day-list__bg.project_one {
-    background-image: url(/images/project_covers/rockeby.png);
-}
-
-.day-list__bg::before {
-    content: "";
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #00a0af;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.day-list__item:hover .day-list__bg:before,
-.day-list__item:focus .day-list__bg:before {
-    opacity: 1;
-}
-
-.day-list__bg:hover {
-    
 }
 
   .day-list__title {
