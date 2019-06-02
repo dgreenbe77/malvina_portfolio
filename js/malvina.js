@@ -2426,6 +2426,9 @@ function DayItem(b) {
     z.style.cursor = "";
     z.isOpen = !0;
     z.style.zIndex = 1;
+    $(this).find('.day-list__header').children().not('.project_intro').addClass('project_text__header');
+    $(this).find('.day-list__header').children()
+      .removeClass('project_text--hidden').addClass("project_text--show");
     TweenLite.to(z, .6, {
       _y: Math.ceil(-(Model.viewport.height - Model.tileDimensions.height) / 2),
       _x: Math.ceil(-(Model.viewport.width - Model.tileDimensions.width) /
@@ -2454,6 +2457,9 @@ function DayItem(b) {
     function (b) {
       V && V.close();
       a();
+      $(this).find('.day-list__header').children().not('.project_intro').removeClass('project_text__header');
+      $(this).find('.day-list__header').children().removeClass('project_text--show');
+      $(this).find('.project_intro').addClass('project_text--hidden');
       0 < WindowScroll.getPositionY() ? WindowScroll.scroll({
         y: 0, speed: .4, onComplete: function () {
           N(b)
